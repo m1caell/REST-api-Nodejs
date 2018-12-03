@@ -16,3 +16,5 @@ Using the new Express 4.0 Router to build an API
 
 ## Testing the API
 Test your API using [Postman](https://chrome.google.com/webstore/detail/postman-rest-client-packa/fhbjgbiflinjbdggehcddcbncdddomop)
+
+Import the file "REST Api.postman_collection.json" for tests URL.
