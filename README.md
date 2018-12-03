@@ -12,7 +12,7 @@ Using the new Express 4.0 Router to build an API
 - Clone the repo: `git clone https://github.com/m1caell/REST-api-Nodejs.git`
 - Install dependencies: `npm install`
 - Import the file "contas_facil_db.sql" to your Mysql
-- Start the server: `node start`
+- Start the server: `npm start`
 - Server availble on: localhost:8080
 
 ## Testing the API
