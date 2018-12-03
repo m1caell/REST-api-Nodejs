@@ -34,12 +34,13 @@ router.route('/:id')
   })
 
   .put(async(req, res) => {
-    try {
-      let updated = await userService.update(req.body, req.params.id);
-      res.send(JSON.stringify({"status": 200, "error": error, "response": updated}));
-    }catch(ex) {
-      res.send(JSON.stringify({"status": 200, "error": ex, "response": "Falha ao atualizar"}));
-    }
+    let updated = userService.update(req.body, req.params.id);
+    
+    updated.then((returned) => {
+      res.send(JSON.stringify({"status": 200, "error": null, "response": returned}));
+    }).catch((err) => {
+      res.send(JSON.stringify({"status": 500, "error": err, "response": "Falha ao atualizar"}));
+    })
   })
 
   .delete(async(req, res) => {

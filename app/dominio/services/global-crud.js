@@ -1,5 +1,4 @@
-import db from '../../infra/dbconnection'
-import userDto from '../dto/user-dto'
+import db from '../../infra/dbconnection';
 
 class GlobalCRUD {
    remove(tableName, id) {
@@ -19,7 +18,6 @@ class GlobalCRUD {
             if(error){      
                return reject(error);
             }
-
             resolve(results)
          });
       });
