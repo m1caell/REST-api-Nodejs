@@ -21,14 +21,14 @@ SET time_zone = "+00:00";
 -- Database: `contas_facil_db`
 --
 CREATE DATABASE `contas_facil_db`;
-
+USE `contas_facil_db`;
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuario`
+-- Estrutura da tabela `USUARIO`
 --
 
-CREATE TABLE `usuario` (
+CREATE TABLE `USUARIO` (
   `ID_USUARIO` int(11) NOT NULL,
   `NOME` varchar(30) NOT NULL,
   `SOBRENOME` varchar(30) NOT NULL,
@@ -37,10 +37,10 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `usuario`
+-- Extraindo dados da tabela `USUARIO`
 --
 
-INSERT INTO `usuario` (`ID_USUARIO`, `NOME`, `SOBRENOME`, `EMAIL`, `SENHA`) VALUES
+INSERT INTO `USUARIO` (`ID_USUARIO`, `NOME`, `SOBRENOME`, `EMAIL`, `SENHA`) VALUES
 (1, 'Goku', 'Kakaroto', 'emailteste@gmail.com', '12345678'),
 (2, 'Naruto', 'Uzamaki', 'emailteste@gmail.com', '12345678')
 
@@ -49,9 +49,9 @@ INSERT INTO `usuario` (`ID_USUARIO`, `NOME`, `SOBRENOME`, `EMAIL`, `SENHA`) VALU
 --
 
 --
--- Indexes for table `usuario`
+-- Indexes for table `USUARIO`
 --
-ALTER TABLE `usuario`
+ALTER TABLE `USUARIO`
   ADD PRIMARY KEY (`ID_USUARIO`);
 
 --
@@ -59,9 +59,9 @@ ALTER TABLE `usuario`
 --
 
 --
--- AUTO_INCREMENT for table `usuario`
+-- AUTO_INCREMENT for table `USUARIO`
 --
-ALTER TABLE `usuario`
+ALTER TABLE `USUARIO`
   MODIFY `ID_USUARIO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 

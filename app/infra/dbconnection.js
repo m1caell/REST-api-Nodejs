@@ -4,10 +4,10 @@ var port = process.env.PORT || 8080;
 if (port === 8080) {
     try {
         var connection = mysql.createConnection({
-            host: 'localhost',
+            host: '192.168.64.3',
             port: 3306,
-            user: 'root',
-            password: '',
+            user: 'admin',
+            password: 'm1caell',
             database: 'contas_facil_db',
             insecureAuth: true
         });
